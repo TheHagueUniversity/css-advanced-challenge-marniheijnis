@@ -2,15 +2,35 @@
     .grid-container {
 display: grid;
         border: 5px solid black;
-        grid-template-columns: 200px 200px 200px;
-        grid-template-rows: 300px 300px;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(3, 150px);
         grid-auto-rows: 100px;
         grid-auto-columns: 100px; 
+        grid-gap: 5px;
     }
 .grid-item{
     border: 2px solid black;
     padding: 10px;
 }
+.grid-container div:nth-child(5) {
+    background-color: red;
+    
+}
+.grid-container div:nth-child(1) {
+    background-color: red;
+  }
+.grid-container div:nth-child(12) {
+    background-color: red;
+  }
+.grid-container div:nth-child(2) {
+    background-color: yellow;
+  }
+.grid-container div:nth-child(7) {
+    background-color: yellow;
+  }
+.grid-container div:nth-child(3) {
+    background-color: blue;
+  }
 body{
     background: white;
 }
